@@ -1,0 +1,40 @@
+<header id="masthead" class="site-header" role="banner">
+  <div id="icon">
+  </div>
+  <hgroup>
+    <h1 class="site-title">
+      <p rel="home" title="Sinatra Guestbook" href="#">Sinatra Guestbook</p>
+    </h1>
+  </hgroup>
+</header>
+
+  <div class="main">
+
+    <form method="<%= @method %>" action="<%= @action %>">
+
+      <div class="entry">
+
+        <textarea id="entryInput" name="blog" class="text" type="text" rows="10" cols="30" placeholder="Say the things you truly feel and not the words of one who kneels..." transparency="50%"></textarea>
+
+        <input id="print" type="submit" value="print">
+
+      </div>
+
+    </form>
+
+    <div id="article">
+      <% if @articles %>
+      <% @articles.each do |article| %>
+      <p><%= article %></p>
+      <% end %>
+      <% end %>
+    </div>
+
+  <div class="copyright">
+    <p>© 2013 Sinatra Guestbook, All Rights Reserved.</p>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,201 @@
+
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+color palette
+#414141		BODY TXT
+#c2c2c2		35% GREY
+*/
+
+/*Fonts*/
+
+@font-face {
+font-family: 'Clarendon';
+src: url('fonts/Clarendon.ttf'),
+     url('fonts/Clarendon.eot'),
+     url('fonts/Clarendon.woff')
+}
+
+@font-face {
+font-family: 'ClarendonLt';
+src: url('fonts/ClarendonLt.ttf'),
+     url('fonts/ClarendonLt.eot'),
+     url('fonts/ClarendonLt.woff')
+}
+
+@font-face {
+font-family: 'EngraversGothic';
+src: url('fonts/EngraversGothic.ttf'),
+     url('fonts/EngraversGothic.eot'),
+     url('fonts/EngraversGothic.woff')
+}
+
+@font-face {
+font-family: 'LucidaConsole';
+src: url('fonts/EngraversGothic.ttf'),
+     url('fonts/EngraversGothic.eot'),
+     url('fonts/EngraversGothic.woff')
+}
+
+
+/* Global styles -----------------------------------------------------------------------------------------------------------*/
+
+/*limited reset*/
+html, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+/* micro-clearfix (http://nicolasgallagher.com/micro-clearfix-hack)/*/
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+
+a {
+	text-decoration: none;
+	color: #414141;
+}
+
+a:hover {
+	color: #707070;
+}
+
+p, h1, h2 {
+	color: #414141;
+}
+
+.header, .main, .main p, {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+  background: url("img/legend.png") no-repeat bottom transparent; max-width: 100%;
+}
+
+#masthead {
+    position: top;
+    padding-bottom: 9em;
+    position: relative;
+    height: 8em;
+}
+
+#icon {
+  background: url("img/quill.png") no-repeat scroll center bottom;
+  height: 90px;
+
+}
+
+.site-title {
+	text-align: center;
+	margin-top: .9em;
+	font-family: 'georgia';
+	font-size: 3.5em;
+	margin-bottom: .8em;
+	color: #414141;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 460px;
+  position: relative;
+}
+
+#entryInput {
+  text-align: left;
+  font-family: 'georgia';
+  font-color: black;
+  font-size: 2em;
+  padding: 10px 10px 10px 10px;
+  width: 440px;
+  height: 112px;
+  border-color: #c2c2c2;
+  zoom: 1;
+  opacity: 0.6;
+  margin-left: -.26em;
+}
+
+.button {
+
+}
+
+#print {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-left: -.6em;
+  width: 463.9px;
+  height: 39px;
+  background-color: #707070;
+  border: none;
+}
+
+input {
+  text-align: center;
+  font-family: 'georgia';
+  text-transform: uppercase;
+  font-color: #fff;
+  font-size: 1em;
+  font-style: bold;
+  padding-top: 6px;
+  position: relative;
+}
+
+#print:hover {
+  background-color: #cccccc;
+}
+
+#article {
+  width: 440px;
+  font-family: 'LucidaConsole';
+  font-size: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+#article p {
+  margin-top: 2em;
+  font-size: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  background: url("img/divider.png") no-repeat scroll center bottom;
+}
+
+.copyright {
+  height: 2em;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: bottom;
+}
+
+.copyright p {
+	text-align: center;
+  font-size: 1em;
+	font-family: 'georgia';
+  bottom: 0;
+
+}
+
+}
